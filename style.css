@@ -1,0 +1,129 @@
+.logo {
+    width: 50px;
+}
+header{
+    position: relative;
+     background: linear-gradient(90deg, #FFE0E6 0%, #BC8F8F 100%);
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    position: absolute;
+    top:5px;
+    width: 100%;
+    gap: 10px;
+    
+}
+.nav a {
+    flex: 1;
+    text-decoration: none;
+    color: rgb(11, 6, 6);
+    padding: 8px;
+    border-radius: 5px;
+    margin: 18px;
+    border: 1px solid  #BC8F8F;
+   background: linear-gradient(0deg, #BC8F8F 0%, #FFE0E6 100%);
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.hero {
+    width: 100%;
+    height: 500px;
+   background-color: linen;
+   position: relative;
+   min-height: 0px;
+min-width: 0px;
+}
+.hero h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 3em;
+    color: #BC8F8F;
+}
+.hero p {
+    text-align: left;
+    font-size: 1.3em;
+    color: #1a1919;
+    width: 40%;
+    border: 1px solid #BC8F8F;
+    background-color:#BC8F8F;
+    padding: 9px;
+    border-radius: 7px;
+    height: 100px;
+}
+.hero img {
+    width: 36%;
+    justify-content: right;
+    align-items: right;
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hero button {
+    position: absolute;
+    left: 15%;
+    margin-top: 40px;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #BC8F8F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ h2 {
+    border-left: 5px solid #bc8f8f;
+    padding-left: 10px;
+    text-align: left;
+    background-color: linen;
+}
+.about {
+    background-color: linen;
+    max-width: 100%;
+    padding: 20px;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about img {
+    margin: 10px;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    
+}
+.about p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #1a1919;
+    text-align: center;
+    width: 40%;
+    border: 1px solid #FFE0E6;
+    background-color: #FFE0E6;
+    border-radius: 7px;
+    height: 20%;
+    box-shadow: 5px;
+}
+.services {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+
+}
+.service {
+
+}
+* {
+    margin: 0%;
+    padding: 0%;
+box-sizing: border-box;
+}

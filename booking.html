@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="booking-card">
+        <div class="card-left">
+            <h2>Make your appointment</h2>
+            <p>Наші майстрині будуть з радістю очікувати Вас на запис, де їхнім пріритетом буде - ваш комфорт та підтримання найвищого рівня послуг.</p>
+        </div>
+    <form class="card-right">
+        <input type="text" class="name" placeholder="Name" required>
+       <input type="tel" class="number" placeholder="Tel.Number" required>
+      <input type="email" class="email" placeholder="Email" required>
+       <select required class="service">
+        <option value="" disabled selected hidden>Service</option>
+        <option value="Classic Manicure">Classic Manicure</option>
+        <option value="Gel Polish">Gel Polish</option>
+        <option value="Nail Art">Nail Art</option>
+       </select>
+       <input type="date" class="date" required>
+       <textarea placeholder="Comment" class="comment"></textarea>
+       <label class="check">
+       <input type="checkbox" required> Я погоджуюсь  на обробку даних 
+       </label>
+       <input type="submit" class="submit" value="Надіслати">
+    </form>
+    </div>
+</body>
+</html>
