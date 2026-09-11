@@ -9,16 +9,18 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+        <p id="message"></p>
+        <p id="price"></p>
     <div class="booking-card">
         <div class="card-left">
             <h2>Make your appointment</h2>
             <p>Наші майстрині будуть з радістю очікувати Вас на запис, де їхнім пріритетом буде - ваш комфорт та підтримання найвищого рівня послуг.</p>
         </div>
-    <form class="card-right">
+    <form class="card-right" id="form">
         <input type="text" class="name" id="name" placeholder="Name" required>
        <input type="tel" class="number" id="number" placeholder="Tel.Number" required>
       <input type="email" class="email" id="email" placeholder="Email" required>
-       <select required class="service">
+       <select required class="service" id="service">
         <option value="" disabled selected hidden>Service</option>
         <option value="Classic Manicure">Classic Manicure</option>
         <option value="Gel Polish">Gel Polish</option>
@@ -27,9 +29,9 @@
        <input type="date" class="date" id="date" required>
        <textarea placeholder="Comment" class="comment" id="comment"></textarea>
        <label class="check">
-       <input type="checkbox" id="consent" required> Я погоджуюсь  на обробку даних 
+       <input type="checkbox" id="consent"> Я погоджуюсь  на обробку даних 
        </label>
-       <input type="submit" class="submit" value="Надіслати">
+       <input id="button" type="submit" class="submit" value="Надіслати">
     </form>
     </div>
 </body>

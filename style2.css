@@ -157,3 +157,39 @@ transform: scale(1.03);
 .card-right input[type="checkbox"] {
     accent-color: var(--button);
 }
+#message {
+    position:absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--button);
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: var(--fon);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    pointer-events: none;
+}
+#message.show {
+    opacity: 1;
+    visibility: visible;
+}
+#price {
+    position: absolute;
+bottom: 190px;
+left: 60%;
+transform: translateX(-50%);
+background-color: var(--button);
+padding: 10px 20px;
+color: var(--fon);
+border-radius: 12px;
+visibility: hidden;
+opacity: 0;
+ transition: opacity 0.5s ease, visibility 0.5s ease;
+    pointer-events: none;
+}
+#price.show {
+    opacity: 1;
+    visibility: visible;
+}
