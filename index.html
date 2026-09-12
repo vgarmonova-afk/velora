@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="beauty-salon, beauty, manicure, velora, service">
+    <meta name="description" content="Velora - manicure salon">
+    <meta property="og:title" content="Velora | Студія манікюру">
+<meta property="og:description" content="Студія манікюру, де краса та догляд за вашими руками стають мистецтвом.">
+<meta property="og:image" content="https://vgarmonova-afk.github.io/velora/images/hero1.jpg">
+<meta property="og:url" content="https://vgarmonova-afk.github.io/velora/">
     <title>Velora| Студія манікюру. </title>
     <link rel="font" href="fonts/Roboto-Regular.woff2">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
 <img src="images/Firefly.png" alt="Логотип Velora" class="logo">
         <section class="nav">
 <nav>
-            <ul>
-                <a href="index.html#hero">Hero</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#services">Service</a>
-                <a href="index.html#gallery">Portfolio</a>
-                <a href="index.html#why-velora">Why Velora</a>
-                <a href="index.html#contact">Contacts</a>
-            
+    <ul>
+               <li><a href="index.html#hero">Hero</a></li>
+               <li><a href="index.html#about">About</a></li>
+               <li><a href="index.html#services">Service</a></li>
+               <li><a href="index.html#gallery">Portfolio</a></li>
+                <li><a href="index.html#why-velora">Why Velora</a></li>
+                <li><a href="index.html#contact">Contacts</a></li>
         </nav>
         </section>
     </header>
     <main>
         <section class="hero" id="hero">
-            <img src="images/hero.jpg" alt="Hero Image" class="hero__image">    
+            <img src="images/hero1.jpg" alt="Hero Image" class="hero__image">    
             <h1>Your nails. Your signature.</h1>
             <p>Студія манікюру, де краса та догляд за вашими руками стають мистецтвом.</p>
-            <form>
                 <a href="booking.html" class="button">Book an Appointment</a>
-            </form>
         </section>
+        <section id="title">
           <h2>Velora — простір, де манікюр стає частиною твого стилю.</h2>
+        </section>
         <section class="about" id="about">
           
             <img src="images/about.jpg" alt="About Image" class="about__image">
@@ -42,20 +47,20 @@
             <p>Наша мета — забезпечити вам комфорт та задоволення від кожного візиту, створюючи атмосферу релаксу та краси.</p>
         </section>
         <section class="services" id="services">
-            <h2 class="service">Service</h2>
-            <div class="service">
+            <h2 class="service_title">Service</h2>
+            <div class="service_one">
                 <img src="images/manicure.jpg" alt="Classic Manicure" class="service__image">
                 <h3>Classic Manicure</h3>
                 <p>Професійний манікюр з використанням якісних матеріалів та сучасних технік.</p>
             <p>$20</p>
             </div>
-            <div class="service">
+            <div class="service_two">
                 <img src="images/pedicure.jpg" alt="Gel Polish" class="service__image">
                 <h3>Gel Polish</h3>
                 <p>Полірування нігтів з використанням гелевих покриттів.</p>
             <p>$25</p>
             </div>
-            <div class="service">
+            <div class="service_three">
                 <img src="images/cosmetology.jpg" alt="Nail Art" class="service__image">
                 <h3>Nail Art</h3>
                 <p>Індивідуальний дизайн нігтів з використанням різноманітних технік та матеріалів.</p>
@@ -89,10 +94,9 @@
             </div>
         </section>
     <section class="booking" id="booking">
-       <form class="book">
-        <button type="submit">Book an Appointment →</button>
-       </form> 
+        <a href="booking.html" class="button">Book an Appointment →</a>
     </section>
+    </main>
         <footer>
             <section class="contact" id="contact">
                 <h2>Контакти</h2>
@@ -101,6 +105,7 @@
                 <p>Email: info@velora.ua</p>
                 <p>Графік роботи: Пн-Пт: 9:00-20:00, Сб-Нд: 10:00-18:00</p>
                 <p>Інстаграм: @velora.ua</p>
+            </section>
             <p>&copy; 2023 Velora. Всі права захищені.</p>
         </footer>
 </body>

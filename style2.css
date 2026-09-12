@@ -15,10 +15,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     background-color: var(--formgraund);
 }
 .booking-card {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,11 +124,14 @@ transform: scale(1.03);
     .check, .submit, textarea {
         grid-column: 1;
     }
-    body {
-        overflow: auto;
-    }
     .card-left {
         padding: 30px 20px;
+    }
+    #message {
+white-space: normal;
+max-width: 90%;
+text-align: center;
+width: max-content;
     }
 }
 .card-right input:focus, .card-right select:focus, .card-right textarea:focus {
@@ -158,15 +161,16 @@ transform: scale(1.03);
     accent-color: var(--button);
 }
 #message {
-    position:absolute;
-    top: 15px;
+    position:fixed;
+    top: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
     background-color: var(--button);
     padding: 10px 20px;
     border-radius: 12px;
     color: var(--fon);
     opacity: 0;
+     z-index: 10;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     pointer-events: none;
@@ -177,15 +181,16 @@ transform: scale(1.03);
 }
 #price {
     position: absolute;
-bottom: 190px;
-left: 60%;
-transform: translateX(-50%);
+top: 100%;
+left: 50%;
+transform: translate(-50%, 20px);
 background-color: var(--button);
 padding: 10px 20px;
 color: var(--fon);
 border-radius: 12px;
 visibility: hidden;
 opacity: 0;
+ z-index: 10;
  transition: opacity 0.5s ease, visibility 0.5s ease;
     pointer-events: none;
 }

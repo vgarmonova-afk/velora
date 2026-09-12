@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="booking, form, registration, appointment">
+    <meta name="description" content="booking form for the appointment">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
     <link rel="icon" href="images/favicon.ico">
@@ -9,16 +11,16 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-        <p id="message"></p>
-        <p id="price"></p>
     <div class="booking-card">
+         <p id="message"></p>
+        <p id="price"></p>
         <div class="card-left">
             <h2>Make your appointment</h2>
             <p>Наші майстрині будуть з радістю очікувати Вас на запис, де їхнім пріритетом буде - ваш комфорт та підтримання найвищого рівня послуг.</p>
         </div>
     <form class="card-right" id="form">
         <input type="text" class="name" id="name" placeholder="Name" required>
-       <input type="tel" class="number" id="number" placeholder="Tel.Number" required>
+       <input type="tel" class="number" id="number" pattern="(\+38)?0[0-9]{9}" placeholder="Tel.Number" required>
       <input type="email" class="email" id="email" placeholder="Email" required>
        <select required class="service" id="service">
         <option value="" disabled selected hidden>Service</option>
