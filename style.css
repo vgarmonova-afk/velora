@@ -42,6 +42,13 @@ h1 {
 justify-content: center;
 text-align: center;
 }
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--fon);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
 .hero img {
     margin: 0 auto;
     padding: 10px;
@@ -154,6 +161,100 @@ table {
 }
 #book:hover, #kons:hover {
     transform: scale(1.1);
+}
+.why-velora {
+    background-color: var(--brown);
+}
+.why-velora h2 {
+    color: var(--fon);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 2rem;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 1500px;
+    margin: 0 auto;
+height: 600px;
+}
+.carousel-track {
+    display: flex;
+    height: 90%;
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
+.cards {
+    display: flex;
+    flex: 0 0 100%;
+    gap: 5px;
+    height: 100%;
+     background-color: var(--margin);
+     border: var(--margin) solid;
+     border-radius: 25px;
+     transform: translateZ(0);
+    backface-visibility: hidden;
+}
+.cards img {
+    flex: 1;
+width: 50%;
+object-fit: cover;
+height: 100%;
+display: block;
+z-index: 2;
+ border-radius: 25px;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+      transform: translateZ(0);
+    backface-visibility: hidden;
+
+}
+.cards-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5rem; 
+    padding: 60px 80px ;
+}
+.cards-text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.cards-text p {
+    max-width: 450px;
+    margin: 0 auto;
+}
+.next, .prev {
+    background-color: var(--tamarind);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    z-index: 3;
+    position: absolute;
+    border: none;
+    transform: translateY(-50%);
+    top: 50%;
+    color: var(--fon);
+        transition: 0.3s ease, transform 0.2s ease;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.next:hover, .prev:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+.next {
+    right: 30px;
+}
+.prev {
+    left: 30px;
 }
 .gallery {
     background-color: var(--boho);

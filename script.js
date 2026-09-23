@@ -5,7 +5,18 @@ const service = document.getElementById("service");
 const date = document.getElementById("date");
 const consent = document.getElementById("consent");
 const price = document.getElementById("price");
+const track = document.querySelector('.carousel-track');
+const cards = document.querySelectorAll('.cards');
+let currentIndex = 0;
 
+document.querySelector('.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+document.querySelector('.prev').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
 service.addEventListener("change", function(){
 
     if (service.value === "Gel Polish") {
